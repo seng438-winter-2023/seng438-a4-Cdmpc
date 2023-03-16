@@ -18,11 +18,18 @@ such that when we insert bugs into the program, the tests should fail and not ig
 
 # Analysis of 10 Mutants of the Range class
 
+![Some Mutants of Range](./media/Range_Mutants_2.jpg)
+
 # Report all the statistics and the mutation score for each test class
+
+![RangeTest Mutation Score](./media/dataScore.jpg)
 
 # Analysis drawn on the effectiveness of each of the test classes
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
+
+- Photo of some equivalent mutants on the Range Constructor
+  ![Range Mutants](./media/Range_Mutants.jpg)
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
