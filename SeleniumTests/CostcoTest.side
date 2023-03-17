@@ -1,0 +1,1535 @@
+{
+  "id": "87fd297c-39f5-4aa8-bd5f-b7d326efafa3",
+  "version": "2.0",
+  "name": "CostcoTest",
+  "url": "https://www.costco.ca",
+  "tests": [{
+    "id": "1c222b04-c25b-47df-98b6-4c45e69eb388",
+    "name": "Login_Incorrect",
+    "commands": [{
+      "id": "713002a4-48c7-4658-a7a3-464db53baedc",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b07512a8-43bf-4995-93cf-1e4b55793e2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bae38d42-9d52-4c2f-9609-8a424c3c0d78",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#slick-slide00 > .visible-xl",
+      "targets": [
+        ["css=#slick-slide00 > .visible-xl", "css:finder"],
+        ["xpath=//img[@alt='Gear up for Outdoor Adventures!\nWhile quantities last\nShop now']", "xpath:img"],
+        ["xpath=//a[@id='slick-slide00']/img", "xpath:idRelative"],
+        ["xpath=//a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a1138a5-5604-4512-828c-3d5ca1c717e5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2059.199951171875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4669d3e-4ee0-46fa-99b8-b91fbab5de25",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_sign_in",
+      "targets": [
+        ["id=header_sign_in", "id"],
+        ["linkText=Sign In / Register", "linkText"],
+        ["css=#header_sign_in", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In / Register')]", "xpath:link"],
+        ["xpath=//a[@id='header_sign_in']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/LogonForm')])[2]", "xpath:href"],
+        ["xpath=//div[4]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In / Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7173de25-2440-42ad-ab1a-72511b266c1a",
+      "comment": "",
+      "command": "type",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=Sign in name", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "mikecoxitchi@gmail.com"
+    }, {
+      "id": "014fb31c-ea37-4d94-bae5-60aa160628ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Y.s+$j9r$3JV?/D"
+    }, {
+      "id": "12261362-55e6-43d6-b1ae-de163dd9ccb9",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f7b6f49-18a9-4073-88be-945d0d6daa6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "2959d132-ef91-4fa3-b6d7-c2927df58120",
+      "comment": "",
+      "command": "click",
+      "target": "id=next",
+      "targets": [
+        ["id=next", "id"],
+        ["css=#next", "css:finder"],
+        ["xpath=//button[@id='next']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "088f12a7-9b97-45ee-bbaf-a6f8f7e8d9dc",
+    "name": "Login_Correct",
+    "commands": [{
+      "id": "5115814e-129d-45d5-a0a5-22d4440314ad",
+      "comment": "",
+      "command": "open",
+      "target": "https://signin.costco.com/e0714dd4-784d-46d6-a278-3e29553483eb/B2C_1A_SSO_WCS_signup_signin_537/oauth2/v2.0/authorize?ClientName=CABC&ui_locales=en-CA&scope=openid+offline_access&response_type=code+id_token&redirect_uri=https%3A%2F%2Fwww.costco.ca%2FOAuthLogonCmd&state=URL%3D%5BSSO%5Dhttps%3A%2F%2Fwww.costco.ca%2F%2F%3Fstate%3DusrClk%253dtrue%2526URL%253d%255bSSO%255d%252f%255bSSO%255d%5BSSO%5D&nonce=Cai2kLKFw4PT4uRX&client_id=e442e6e6-2602-4a39-937b-8b28b4457ed3&TC=0&response_mode=form_post",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20483f60-ae46-4f39-9a73-e466da0a4984",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b61c130-6fa9-4830-ab85-edd015b334ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=signInName",
+      "targets": [
+        ["id=signInName", "id"],
+        ["name=Sign in name", "name"],
+        ["css=#signInName", "css:finder"],
+        ["xpath=//input[@id='signInName']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "mikecoxitchi@gmail.com"
+    }, {
+      "id": "547b49a0-911f-4200-a1c6-746d4b334e80",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=Password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Y.s+$j9r$3JV?/D"
+    }, {
+      "id": "b896b840-b707-4616-91e9-39991f665d09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.material-icons",
+      "targets": [
+        ["css=.material-icons", "css:finder"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'visibility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "222bc697-a01e-48ee-bd10-226439eddb11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.material-icons",
+      "targets": [
+        ["css=.material-icons", "css:finder"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'visibility_off')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "443daac4-0240-485f-a369-6c1fe0eae046",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.material-icons",
+      "targets": [
+        ["css=.material-icons", "css:finder"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[2]/div/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'visibility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b004188-6b04-48bc-b0b8-cd2957ef031e",
+      "comment": "",
+      "command": "click",
+      "target": "id=next",
+      "targets": [
+        ["id=next", "id"],
+        ["css=#next", "css:finder"],
+        ["xpath=//button[@id='next']", "xpath:attributes"],
+        ["xpath=//form[@id='localAccountForm']/div[3]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc877a4c-377e-4758-9de7-69db67757d2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group > .tertiary",
+      "targets": [
+        ["css=.form-group > .tertiary", "css:finder"],
+        ["xpath=//input[@value='Browse as Non-Member']", "xpath:attributes"],
+        ["xpath=//div[@id='link-membership-interrupt']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "599ba371-6687-4317-86fa-f0bc06054ca6",
+      "comment": "",
+      "command": "click",
+      "target": "id=myaccount-react-d",
+      "targets": [
+        ["id=myaccount-react-d", "id"],
+        ["css=#myaccount-react-d", "css:finder"],
+        ["xpath=//button[@id='myaccount-react-d']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dcef66d-21bc-430f-9bbd-76a9495d486b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mi_1 .MuiTypography-root",
+      "targets": [
+        ["css=#mi_1 .MuiTypography-root", "css:finder"],
+        ["xpath=//li[@id='mi_1']/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/ul/li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7b922d07-521b-4c03-9393-6f81fb4fb170",
+    "name": "Search_Item",
+    "commands": [{
+      "id": "d9606f8c-7647-4d2d-9d08-1e7fdee23449",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/?DM_PersistentCookieCreated=true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c806d4d-fd73-4542-b965-12d703a932f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da412fc3-bcd9-4ed6-8bbc-0dead096f41c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,922.4000244140625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2094949f-cc07-44f5-8cbc-b3398468d9f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdc1f54b-3e71-43c7-91b6-a9c71591c162",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-field",
+      "targets": [
+        ["id=search-field", "id"],
+        ["css=#search-field", "css:finder"],
+        ["xpath=//input[@id='search-field']", "xpath:attributes"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/span[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "Juice"
+    }, {
+      "id": "d48257d0-23ec-44c2-8323-fd81f59ce5f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4) > .co-search-thin",
+      "targets": [
+        ["css=.btn:nth-child(4) > .co-search-thin", "css:finder"],
+        ["xpath=//form[@id='formcatsearch']/div[2]/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9c9c6756-698c-4354-9c89-2995110ba1b5",
+    "name": "Add_Item_to_Cart",
+    "commands": [{
+      "id": "01f469cc-baec-45d3-99e2-6ae798403b3d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/CatalogSearch?dept=All&keyword=Juice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d93e1ef-b610-4943-9b01-b28889ff82c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a003394-e472-4c17-801e-1710371b05e2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,600)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8749088c-727c-4d60-9bca-79b0a0b1a706",
+      "comment": "",
+      "command": "click",
+      "target": "id=addbutton-0",
+      "targets": [
+        ["id=addbutton-0", "id"],
+        ["name=add-to-cart", "name"],
+        ["css=#addbutton-0", "css:finder"],
+        ["xpath=//button[@id='addbutton-0']", "xpath:attributes"],
+        ["xpath=//div[@id='addButtonContainer-0']/button", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65a325d8-aaed-494c-986b-2b016af5f1ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=cart-d",
+      "targets": [
+        ["id=cart-d", "id"],
+        ["css=#cart-d", "css:finder"],
+        ["xpath=//a[@id='cart-d']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/CheckoutCartView')])[2]", "xpath:href"],
+        ["xpath=//div[4]/nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "285d27ca-d596-4323-bf49-755cd8ccf042",
+    "name": "Transaction_Process_Wrong_Card",
+    "commands": [{
+      "id": "62939d0f-5229-48ce-aef4-d37f4f711c9c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costco.ca/CatalogSearch?dept=All&keyword=Juice",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb7c0a06-fc7a-4366-bb26-d522fd19975e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9be952a1-3f94-4b3b-a77e-f6403977366d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=addbutton-0",
+      "targets": [
+        ["id=addbutton-0", "id"],
+        ["name=add-to-cart", "name"],
+        ["css=#addbutton-0", "css:finder"],
+        ["xpath=//button[@id='addbutton-0']", "xpath:attributes"],
+        ["xpath=//div[@id='addButtonContainer-0']/button", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de8a5e9b-3bf7-4338-8987-029a6c80a787",
+      "comment": "",
+      "command": "click",
+      "target": "id=addbutton-0",
+      "targets": [
+        ["id=addbutton-0", "id"],
+        ["name=add-to-cart", "name"],
+        ["css=#addbutton-0", "css:finder"],
+        ["xpath=//button[@id='addbutton-0']", "xpath:attributes"],
+        ["xpath=//div[@id='addButtonContainer-0']/button", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a3ee8c2-2478-4472-9734-b6e5b9e0d444",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=addbutton-0",
+      "targets": [
+        ["id=addbutton-0", "id"],
+        ["name=add-to-cart", "name"],
+        ["css=#addbutton-0", "css:finder"],
+        ["xpath=//button[@id='addbutton-0']", "xpath:attributes"],
+        ["xpath=//div[@id='addButtonContainer-0']/button", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "059ddb0c-0d1d-47a4-bbc0-1593ead397ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=cart-d",
+      "targets": [
+        ["id=cart-d", "id"],
+        ["css=#cart-d", "css:finder"],
+        ["xpath=//a[@id='cart-d']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/CheckoutCartView')])[2]", "xpath:href"],
+        ["xpath=//div[4]/nav/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1741133e-537a-4ef6-9167-88c637f2abc0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=sub-1",
+      "targets": [
+        ["id=sub-1", "id"],
+        ["name=minusQty", "name"],
+        ["css=#sub-1", "css:finder"],
+        ["xpath=//button[@id='sub-1']", "xpath:attributes"],
+        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "512150b0-d85e-4fa8-935b-894ccfd10eb5",
+      "comment": "",
+      "command": "click",
+      "target": "id=sub-1",
+      "targets": [
+        ["id=sub-1", "id"],
+        ["name=minusQty", "name"],
+        ["css=#sub-1", "css:finder"],
+        ["xpath=//button[@id='sub-1']", "xpath:attributes"],
+        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7be96dcd-c033-4a56-9a42-d4040d95cf90",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=sub-1",
+      "targets": [
+        ["id=sub-1", "id"],
+        ["name=minusQty", "name"],
+        ["css=#sub-1", "css:finder"],
+        ["xpath=//button[@id='sub-1']", "xpath:attributes"],
+        ["xpath=//div[@id='order-item_1']/div/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bef01ba5-18c6-4caf-847e-933638a3d283",
+      "comment": "",
+      "command": "click",
+      "target": "id=shopCartCheckoutSubmitButton",
+      "targets": [
+        ["id=shopCartCheckoutSubmitButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#shopCartCheckoutSubmitButton", "css:finder"],
+        ["xpath=//input[@id='shopCartCheckoutSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout-button-wrapper']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f009345b-1dad-4c68-9602-df1815bad0f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group > .tertiary",
+      "targets": [
+        ["css=.form-group > .tertiary", "css:finder"],
+        ["xpath=//input[@value='Browse as Non-Member']", "xpath:attributes"],
+        ["xpath=//div[@id='link-membership-interrupt']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28af09e0-328e-444a-977a-f0d88414a8ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=shopCartCheckoutSubmitButton",
+      "targets": [
+        ["id=shopCartCheckoutSubmitButton", "id"],
+        ["name=checkout", "name"],
+        ["css=#shopCartCheckoutSubmitButton", "css:finder"],
+        ["xpath=//input[@id='shopCartCheckoutSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout-button-wrapper']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e93dfd7-d93f-48da-93d1-3bbd3a3fc5a8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,102.4000015258789)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8042348-c954-41f5-87df-6280755d5cd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=membershipNumber",
+      "targets": [
+        ["id=membershipNumber", "id"],
+        ["name=membershipNumber", "name"],
+        ["css=#membershipNumber", "css:finder"],
+        ["xpath=//input[@id='membershipNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='AddMembershipForm']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "283ac493-0040-4e2a-b94b-60cfa055d9a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=membershipNumber",
+      "targets": [
+        ["id=membershipNumber", "id"],
+        ["name=membershipNumber", "name"],
+        ["css=#membershipNumber", "css:finder"],
+        ["xpath=//input[@id='membershipNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='AddMembershipForm']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "12345678"
+    }, {
+      "id": "67078801-ef92-4e78-bd3b-88c2491029d1",
+      "comment": "",
+      "command": "click",
+      "target": "id=addMemberShipBtn",
+      "targets": [
+        ["id=addMemberShipBtn", "id"],
+        ["css=#addMemberShipBtn", "css:finder"],
+        ["xpath=//input[@id='addMemberShipBtn']", "xpath:attributes"],
+        ["xpath=//form[@id='AddMembershipForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ea4b3402-e2cf-42c0-b553-bb7ce8628b08",
+    "name": "Naviagate_to_Another_Tab",
+    "commands": [{
+      "id": "5e94d078-d83d-44d5-b53f-34446e13fc9b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e4142c3-43a2-40e8-87f4-054e8c3bf109",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88b8dbae-d2d0-4716-b2fb-ca86f6a2cb98",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,483.20001220703125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3898e07d-ec5d-4140-8812-485b228c0e5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_0",
+      "targets": [
+        ["id=Home_Ancillary_0", "id"],
+        ["linkText=Grocery", "linkText"],
+        ["css=#Home_Ancillary_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Grocery')])[6]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_0']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/grocery-household.html')])[7]", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc272d3d-c058-4ee2-9f25-606b1b93946c",
+      "comment": "",
+      "command": "click",
+      "target": "id=Home_Ancillary_2",
+      "targets": [
+        ["id=Home_Ancillary_2", "id"],
+        ["linkText=Business Centre", "linkText"],
+        ["css=#Home_Ancillary_2", "css:finder"],
+        ["xpath=(//a[contains(text(),'Business Centre')])[2]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_2']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costcobusinesscentre.ca')])[15]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "099b09a0-ec19-42df-9b34-e39f41b33363",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,402.3999938964844)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da7eedf9-4692-4f99-9d4f-530ab3250779",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(7)",
+      "targets": [
+        ["css=.row:nth-child(7)", "css:finder"],
+        ["xpath=//form[@id='email-popup']/div", "xpath:idRelative"],
+        ["xpath=//div[23]/form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7a696b2-c28c-4c75-8e29-1e8dea235ccc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#closeEmailPopup > .co-close",
+      "targets": [
+        ["css=#closeEmailPopup > .co-close", "css:finder"],
+        ["xpath=//button[@id='closeEmailPopup']/span", "xpath:idRelative"],
+        ["xpath=//form/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ff27fb3-b7a2-4f21-abfd-783efdac3364",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=Home_Ancillary_6",
+      "targets": [
+        ["id=Home_Ancillary_6", "id"],
+        ["linkText=Travel", "linkText"],
+        ["css=#Home_Ancillary_6", "css:finder"],
+        ["xpath=//a[contains(text(),'Travel')]", "xpath:link"],
+        ["xpath=//a[@id='Home_Ancillary_6']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costcotravel.ca')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Travel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b98ccdee-123d-4687-99aa-7f8a3ff52827",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=Home_Ancillary_6",
+      "targets": [
+        ["id=Home_Ancillary_6", "id"],
+        ["css=#Home_Ancillary_6", "css:finder"],
+        ["xpath=//a[@id='Home_Ancillary_6']", "xpath:attributes"],
+        ["xpath=//div[@id='navigation-widget']/div/nav/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costcotravel.ca')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c0de57d-934b-4d25-ba63-cbbfa9ffebea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Shop Travel",
+      "targets": [
+        ["linkText=Shop Travel", "linkText"],
+        ["css=.sub-item:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shop Travel')]", "xpath:link"],
+        ["xpath=//div[@id='Home_Ancillary_Popover_6-container']/div/div/ol/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.costcotravel.ca/')]", "xpath:href"],
+        ["xpath=//ol/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4ad317b-cdda-443d-b415-685405a843f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-uppercase",
+      "targets": [
+        ["css=.text-uppercase", "css:finder"],
+        ["xpath=//div[@id='provincePopupDiv']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "90e1f2b0-a1d4-43d0-9878-4f7ca0ded58f",
+    "name": "Book_Trip_Invalid",
+    "commands": [{
+      "id": "0c38bf81-f1bb-44be-9411-dcbb72e08b63",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costcotravel.ca/?utm_source=costco.ca&utm_medium=referral&utm_campaign=ShopTravel&utm_term=costcotravel.ca&utm_content=20160610",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a66a312f-5ae1-4dfb-9cbe-670b4f249a32",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f0e8576-8416-46da-92ae-7c8275ccc385",
+      "comment": "",
+      "command": "click",
+      "target": "id=destination",
+      "targets": [
+        ["id=destination", "id"],
+        ["name=destination", "name"],
+        ["css=#destination", "css:finder"],
+        ["xpath=//select[@id='destination']", "xpath:attributes"],
+        ["xpath=//div[@id='destination_widget']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a69801e-91e8-4c89-943b-6528384f082b",
+      "comment": "",
+      "command": "select",
+      "target": "id=destination",
+      "targets": [],
+      "value": "label=Florida"
+    }, {
+      "id": "dca10351-f4a0-4de9-836b-1e97af6bb28e",
+      "comment": "",
+      "command": "click",
+      "target": "id=region",
+      "targets": [
+        ["id=region", "id"],
+        ["name=region", "name"],
+        ["css=#region", "css:finder"],
+        ["xpath=//select[@id='region']", "xpath:attributes"],
+        ["xpath=//div[@id='region_widget']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7380ce3f-95e5-45e9-acf7-17262bde6b2c",
+      "comment": "",
+      "command": "select",
+      "target": "id=region",
+      "targets": [],
+      "value": "label=Miami, FL (MIA)"
+    }, {
+      "id": "f4d215da-b0e4-487c-a0a1-0afaa637bc61",
+      "comment": "",
+      "command": "click",
+      "target": "id=departureDateWidget",
+      "targets": [
+        ["id=departureDateWidget", "id"],
+        ["name=departureDateWidget", "name"],
+        ["css=#departureDateWidget", "css:finder"],
+        ["xpath=//input[@id='departureDateWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='departure_date_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f4adf33-3f67-4c80-a3d4-22fa0a3fbc46",
+      "comment": "",
+      "command": "type",
+      "target": "id=departureDateWidget",
+      "targets": [
+        ["id=departureDateWidget", "id"],
+        ["name=departureDateWidget", "name"],
+        ["css=#departureDateWidget", "css:finder"],
+        ["xpath=//input[@id='departureDateWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='departure_date_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "08/03/2023"
+    }, {
+      "id": "f2d935dc-ac2c-45ec-a17a-452f8eb94428",
+      "comment": "",
+      "command": "click",
+      "target": "id=returnDateWidget",
+      "targets": [
+        ["id=returnDateWidget", "id"],
+        ["name=returnDateWidget", "name"],
+        ["css=#returnDateWidget", "css:finder"],
+        ["xpath=//input[@id='returnDateWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='return_date_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d94c9f19-ace3-400e-bedd-672195603149",
+      "comment": "",
+      "command": "click",
+      "target": "id=returnDateWidget",
+      "targets": [
+        ["id=returnDateWidget", "id"],
+        ["name=returnDateWidget", "name"],
+        ["css=#returnDateWidget", "css:finder"],
+        ["xpath=//input[@id='returnDateWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='return_date_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05464a9d-f6b7-4fd1-b278-a26eb4aae19d",
+      "comment": "",
+      "command": "type",
+      "target": "id=returnDateWidget",
+      "targets": [
+        ["id=returnDateWidget", "id"],
+        ["name=returnDateWidget", "name"],
+        ["css=#returnDateWidget", "css:finder"],
+        ["xpath=//input[@id='returnDateWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='return_date_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "09/03/2023"
+    }, {
+      "id": "4cb62dea-acaf-4d73-aa76-3618ad52f571",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_vacation_packages_form",
+      "targets": [
+        ["id=search_vacation_packages_form", "id"],
+        ["css=#search_vacation_packages_form", "css:finder"],
+        ["xpath=//form[@id='search_vacation_packages_form']", "xpath:attributes"],
+        ["xpath=//div[@id='search_vacation_packages_view']/form", "xpath:idRelative"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a790b51f-1411-46ba-8a29-d39eae4a4e6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=departureCityTextWidget",
+      "targets": [
+        ["id=departureCityTextWidget", "id"],
+        ["name=departureCityTextWidget", "name"],
+        ["css=#departureCityTextWidget", "css:finder"],
+        ["xpath=//input[@id='departureCityTextWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='departure_location_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4f80f6b-88b7-4125-aecc-98aca28d6db1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.airport",
+      "targets": [
+        ["css=.airport", "css:finder"],
+        ["xpath=//div[@id='departure_location_widget']/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'(YYC) Calgary International Airport')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e588f623-2943-4e9d-94b9-0011315cb7f9",
+      "comment": "",
+      "command": "type",
+      "target": "id=departureCityTextWidget",
+      "targets": [
+        ["id=departureCityTextWidget", "id"],
+        ["name=departureCityTextWidget", "name"],
+        ["css=#departureCityTextWidget", "css:finder"],
+        ["xpath=//input[@id='departureCityTextWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='departure_location_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "(YYC) Calgary International Airport"
+    }, {
+      "id": "9304b0ed-f1bb-4727-a1fd-8798bacc7133",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4) > .col-submit > .btn",
+      "targets": [
+        ["css=.row:nth-child(4) > .col-submit > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//form[@id='search_vacation_packages_form']/div[4]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e7bfa112-be85-46c6-86b2-b9587ea2b36a",
+    "name": "Book_Valid_Trip",
+    "commands": [{
+      "id": "3fda721d-16b9-4088-ada1-6d8740288f15",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.costcotravel.ca/?utm_source=costco.ca&utm_medium=referral&utm_campaign=ShopTravel&utm_term=costcotravel.ca&utm_content=20160610",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3237fcdd-f7bb-4ce9-b572-f7df07276742",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6afbd5af-61dd-4fd4-a969-21f75b691544",
+      "comment": "",
+      "command": "click",
+      "target": "id=destination",
+      "targets": [
+        ["id=destination", "id"],
+        ["name=destination", "name"],
+        ["css=#destination", "css:finder"],
+        ["xpath=//select[@id='destination']", "xpath:attributes"],
+        ["xpath=//div[@id='destination_widget']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b2e57d2-edb3-4419-b72d-ca35a890d636",
+      "comment": "",
+      "command": "select",
+      "target": "id=destination",
+      "targets": [],
+      "value": "label=Florida"
+    }, {
+      "id": "da6faf0b-0022-495b-8854-b7ac94a3e40e",
+      "comment": "",
+      "command": "click",
+      "target": "id=region",
+      "targets": [
+        ["id=region", "id"],
+        ["name=region", "name"],
+        ["css=#region", "css:finder"],
+        ["xpath=//select[@id='region']", "xpath:attributes"],
+        ["xpath=//div[@id='region_widget']/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4be33f6d-f3c7-443d-a701-afb08e5672b3",
+      "comment": "",
+      "command": "select",
+      "target": "id=region",
+      "targets": [],
+      "value": "label=Miami, FL (MIA)"
+    }, {
+      "id": "f2798394-0d76-4acc-bb30-eb6ddae77c6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=departureDateWidget",
+      "targets": [
+        ["id=departureDateWidget", "id"],
+        ["name=departureDateWidget", "name"],
+        ["css=#departureDateWidget", "css:finder"],
+        ["xpath=//input[@id='departureDateWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='departure_date_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcd766e9-927f-410a-858b-613a15af6b0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=departureDateWidget",
+      "targets": [
+        ["id=departureDateWidget", "id"],
+        ["name=departureDateWidget", "name"],
+        ["css=#departureDateWidget", "css:finder"],
+        ["xpath=//input[@id='departureDateWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='departure_date_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "08/15/2023"
+    }, {
+      "id": "96837592-b1f1-46cc-835b-b13494ab0356",
+      "comment": "",
+      "command": "click",
+      "target": "id=returnDateWidget",
+      "targets": [
+        ["id=returnDateWidget", "id"],
+        ["name=returnDateWidget", "name"],
+        ["css=#returnDateWidget", "css:finder"],
+        ["xpath=//input[@id='returnDateWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='return_date_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee1c5458-bde6-4a92-8a5c-36d6a1f195fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=returnDateWidget",
+      "targets": [
+        ["id=returnDateWidget", "id"],
+        ["name=returnDateWidget", "name"],
+        ["css=#returnDateWidget", "css:finder"],
+        ["xpath=//input[@id='returnDateWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='return_date_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "08/25/2023"
+    }, {
+      "id": "63086615-8eb4-421d-b946-e249c2b2070c",
+      "comment": "",
+      "command": "click",
+      "target": "id=departureCityTextWidget",
+      "targets": [
+        ["id=departureCityTextWidget", "id"],
+        ["name=departureCityTextWidget", "name"],
+        ["css=#departureCityTextWidget", "css:finder"],
+        ["xpath=//input[@id='departureCityTextWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='departure_location_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a458faa2-c90d-4903-9def-52de4aa80f46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.airport",
+      "targets": [
+        ["css=.airport", "css:finder"],
+        ["xpath=//div[@id='departure_location_widget']/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'(YYC) Calgary International Airport')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0e8d304-4635-402a-9b95-f97856722c01",
+      "comment": "",
+      "command": "type",
+      "target": "id=departureCityTextWidget",
+      "targets": [
+        ["id=departureCityTextWidget", "id"],
+        ["name=departureCityTextWidget", "name"],
+        ["css=#departureCityTextWidget", "css:finder"],
+        ["xpath=//input[@id='departureCityTextWidget']", "xpath:attributes"],
+        ["xpath=//div[@id='departure_location_widget']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "(YYC) Calgary International Airport"
+    }, {
+      "id": "f2bac9cd-d57c-4677-a66f-5b4f2f3a83fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_vacation_packages_form",
+      "targets": [
+        ["id=search_vacation_packages_form", "id"],
+        ["css=#search_vacation_packages_form", "css:finder"],
+        ["xpath=//form[@id='search_vacation_packages_form']", "xpath:attributes"],
+        ["xpath=//div[@id='search_vacation_packages_view']/form", "xpath:idRelative"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40c82c5c-7e88-467f-acc3-6ce7a18ceba8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4) > .col-submit > .btn",
+      "targets": [
+        ["css=.row:nth-child(4) > .col-submit > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//form[@id='search_vacation_packages_form']/div[4]/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4de02b16-f561-4764-bd64-6e11bc78590f",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"linkContinue\"]",
+      "targets": [
+        ["css=*[data-test=\"linkContinue\"]", "css:data-attr"],
+        ["linkText=View Details & Customize", "linkText"],
+        ["css=.card:nth-child(2) > .travel-info .btn-secondary", "css:finder"],
+        ["xpath=//a[contains(text(),'View Details & Customize')]", "xpath:link"],
+        ["xpath=//div[@id='search-results-container']/div[2]/div/div[2]/div[2]/div/div[3]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Details & Customize')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01bee3ca-4297-4fe9-9c18-aa9455584f6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"buttonAcknowledge\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonAcknowledge\"]", "css:data-attr"],
+        ["id=confirm-btn", "id"],
+        ["css=#confirm-btn", "css:finder"],
+        ["xpath=//button[@id='confirm-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='dialog-body-1679002253388']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'I Understand')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a38ecb9b-3f3e-41bc-95d0-c8113574f571",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"advisoryCheckbox\"]",
+      "targets": [
+        ["css=*[data-test=\"advisoryCheckbox\"]", "css:data-attr"],
+        ["id=hotelAdvisoryCheckbox-0", "id"],
+        ["name=hotelAdvisoryCheckbox", "name"],
+        ["css=#hotelAdvisoryCheckbox-0", "css:finder"],
+        ["xpath=//input[@id='hotelAdvisoryCheckbox-0']", "xpath:attributes"],
+        ["xpath=//div[@id='hotelAcknowlegementContentDiv']/div/span/input", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f29d20d3-fd42-4553-9110-c71db1fc029e",
+      "comment": "",
+      "command": "click",
+      "target": "id=hotelAdvisoryCheckbox-1",
+      "targets": [
+        ["id=hotelAdvisoryCheckbox-1", "id"],
+        ["css=#hotelAdvisoryCheckbox-1", "css:finder"],
+        ["xpath=//input[@id='hotelAdvisoryCheckbox-1']", "xpath:attributes"],
+        ["xpath=//div[@id='hotelAcknowlegementContentDiv']/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44ab9aae-1111-448a-9322-dc96ac4c0027",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"buttonAcknowledge\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonAcknowledge\"]", "css:data-attr"],
+        ["id=confirm-btn", "id"],
+        ["css=#confirm-btn", "css:finder"],
+        ["xpath=//button[@id='confirm-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='dialog-body-1679002253388']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'I Understand')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79a6c42f-0b36-4c78-aefa-faf174a386e6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=*[data-test=\"buttonAcknowledge\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonAcknowledge\"]", "css:data-attr"],
+        ["id=confirm-btn", "id"],
+        ["css=#confirm-btn", "css:finder"],
+        ["xpath=//button[@id='confirm-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='dialog-body-1679002253388']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'I Understand')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1965296-371a-42ac-ac11-4458143195ad",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=*[data-test=\"buttonAcknowledge\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonAcknowledge\"]", "css:data-attr"],
+        ["id=confirm-btn", "id"],
+        ["css=#confirm-btn", "css:finder"],
+        ["xpath=//button[@id='confirm-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='dialog-body-1679002253388']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'I Understand')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b17601ff-eef7-4fc6-ad8d-b48b3fd3a4b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"linkSelect\"]",
+      "targets": [
+        ["css=*[data-test=\"linkSelect\"]", "css:data-attr"],
+        ["id=select_0", "id"],
+        ["css=#select_0", "css:finder"],
+        ["xpath=//a[@id='select_0']", "xpath:attributes"],
+        ["xpath=//div[@id='flights-results-target']/div/div/div/div[3]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05f1fe54-6775-451d-9b05-df061993aeaf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=*[data-test=\"linkSelect\"]",
+      "targets": [
+        ["css=*[data-test=\"linkSelect\"]", "css:data-attr"],
+        ["id=select_0", "id"],
+        ["css=#select_0", "css:finder"],
+        ["xpath=//a[@id='select_0']", "xpath:attributes"],
+        ["xpath=//div[@id='flights-results-target']/div/div/div/div[3]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed55a580-74c3-4309-9a40-321c5ce24d59",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=*[data-test=\"linkSelect\"]",
+      "targets": [
+        ["css=*[data-test=\"linkSelect\"]", "css:data-attr"],
+        ["id=select_0", "id"],
+        ["css=#select_0", "css:finder"],
+        ["xpath=//a[@id='select_0']", "xpath:attributes"],
+        ["xpath=//div[@id='flights-results-target']/div/div/div/div[3]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "919c9549-8e46-41fe-9fad-c132bd6ec785",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"buttonModalContinue\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonModalContinue\"]", "css:data-attr"],
+        ["css=.btn-dark:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//div[@id='dialog-body-1679002275683']/button[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f281efb2-fc8d-4f72-9c63-4f638da4df9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.continue-button-bottom > .btn-secondary",
+      "targets": [
+        ["css=.continue-button-bottom > .btn-secondary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Continue to Transportation')])[2]", "xpath:link"],
+        ["xpath=//div[@id='centerColumn']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3eee0d0d-8b46-4a40-840e-dce67df277bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"buttonAcknowledge\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonAcknowledge\"]", "css:data-attr"],
+        ["id=confirm-btn", "id"],
+        ["css=#confirm-btn", "css:finder"],
+        ["xpath=//button[@id='confirm-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='dialog-body-1679002289415']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'I Understand')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fbc2732-739d-4a3b-ba03-032fcdb5d323",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=*[data-test=\"buttonAcknowledge\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonAcknowledge\"]", "css:data-attr"],
+        ["id=confirm-btn", "id"],
+        ["css=#confirm-btn", "css:finder"],
+        ["xpath=//button[@id='confirm-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='dialog-body-1679002289415']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'I Understand')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3e35056-e0c7-4bda-ae0c-0b6444fe6cd5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=*[data-test=\"buttonAcknowledge\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonAcknowledge\"]", "css:data-attr"],
+        ["id=confirm-btn", "id"],
+        ["css=#confirm-btn", "css:finder"],
+        ["xpath=//button[@id='confirm-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='dialog-body-1679002289415']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'I Understand')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aefac2c4-86cd-4102-a487-a0d45f664111",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bottomContinueToRecap",
+      "targets": [
+        ["css=.bottomContinueToRecap", "css:finder"],
+        ["xpath=(//a[contains(text(),'Continue to Activities')])[2]", "xpath:link"],
+        ["xpath=//div[@id='continueRecpButton']/a", "xpath:idRelative"],
+        ["xpath=//main/div/div/div/div/div[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38f413b3-9752-4eda-8e37-85dad86d5307",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Cruises by Port",
+      "targets": [
+        ["linkText=Cruises by Port", "linkText"],
+        ["css=.footer-col:nth-child(2) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cruises by Port')]", "xpath:link"],
+        ["xpath=//div[@id='pageContent']/div[2]/footer/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Cruise-Travel-Offers/Home-Port-Cruises')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cruises by Port')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc856cb-5c0b-469e-8ab6-c6e10393446f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Cruises by Port",
+      "targets": [
+        ["linkText=Cruises by Port", "linkText"],
+        ["css=.footer-col:nth-child(2) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cruises by Port')]", "xpath:link"],
+        ["xpath=//div[@id='pageContent']/div[2]/footer/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Cruise-Travel-Offers/Home-Port-Cruises')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cruises by Port')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f494061-3242-42dc-b99b-413f27f8533d",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"buttonContinue\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonContinue\"]", "css:data-attr"],
+        ["linkText=Continue to Recap", "linkText"],
+        ["css=.customizePackage", "css:finder"],
+        ["xpath=//a[contains(text(),'Continue to Recap')]", "xpath:link"],
+        ["xpath=//form[@id='formActivitiesResults']/div/a", "xpath:idRelative"],
+        ["xpath=//form/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Continue to Recap')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72f6199d-aa39-4893-8c55-a26dc6d5ce53",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"buttonForSignInAndBook\"]",
+      "targets": [
+        ["css=*[data-test=\"buttonForSignInAndBook\"]", "css:data-attr"],
+        ["css=.continue-button-bottom > .btn-secondary", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login and Book')])[2]", "xpath:link"],
+        ["xpath=//div[@id='custompath_package_recap']/div/div/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/div/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "23b0b57f-4a26-44ed-91d7-d0d80f7050b9",
+    "name": "Sign_Out",
+    "commands": [{
+      "id": "dbf194c9-fadd-4277-9ba9-410ac2db45c4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8095407b-b04d-4fe4-b18c-137acc79937a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07264924-d9c5-410c-8fa6-56156ba0d898",
+      "comment": "",
+      "command": "click",
+      "target": "id=myaccount-react-d",
+      "targets": [
+        ["id=myaccount-react-d", "id"],
+        ["css=#myaccount-react-d", "css:finder"],
+        ["xpath=//button[@id='myaccount-react-d']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "118e333a-3c4d-464c-af69-c751a936e957",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mi_1 .MuiTypography-root",
+      "targets": [
+        ["css=#mi_1 .MuiTypography-root", "css:finder"],
+        ["xpath=//li[@id='mi_1']/a/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/ul/li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Account Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fca6f70a-b894-4f9c-bd93-d480c2088f44",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,236)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a9731f3-3fe6-4e1b-a9b7-463a2f5a384f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiGrid-root:nth-child(2) > .css-1xpei18 .MuiTypography-t6",
+      "targets": [
+        ["css=.MuiGrid-root:nth-child(2) > .css-1xpei18 .MuiTypography-t6", "css:finder"],
+        ["xpath=//div[@id='accountHome']/div/div[2]/div[2]/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8cefb5c-a41e-48d4-bf56-651bbc80401e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,300)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "880a955a-e384-4dba-b7d5-6b7cfd8bdb29",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-1ljkbn6",
+      "targets": [
+        ["css=.css-1ljkbn6", "css:finder"],
+        ["xpath=//li[@id='mi_signout']/a/span", "xpath:idRelative"],
+        ["xpath=//li[9]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign Out')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win426",
+      "windowTimeout": 2000
+    }, {
+      "id": "f1e42d85-c0f2-4b81-b160-b4f5709b3aa9",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df4c1c2a-a9c9-4478-a011-f43a1dc6f83b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win426}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3524b8b7-856a-437f-9265-df49d6a511c1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94b76eee-09de-43a5-a3d5-7f9325cfa9b7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "161414d1-d097-4260-8553-9a130a3e99fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=header_sign_in",
+      "targets": [
+        ["id=header_sign_in", "id"],
+        ["linkText=Sign In / Register", "linkText"],
+        ["css=#header_sign_in", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In / Register')]", "xpath:link"],
+        ["xpath=//a[@id='header_sign_in']", "xpath:attributes"],
+        ["xpath=//header[@id='header-widget']/div[2]/div/div/div/div[2]/div/div[4]/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.costco.ca/LogonForm')])[2]", "xpath:href"],
+        ["xpath=//div[4]/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In / Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "65ba18f5-3188-46e3-b9b7-22ef9f3e718c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://signin.costco.com/e0714dd4-784d-46d6-a278-3e29553483eb/B2C_1A_SSO_WCS_signup_signin_537/oauth2/v2.0/authorize?ClientName=CABC&ui_locales=en-CA&scope=openid+offline_access&response_type=code+id_token&redirect_uri=https%3A%2F%2Fwww.costco.ca%2FOAuthLogonCmd&state=URL%3D%5BSSO%5Dhttps%3A%2F%2Fwww.costco.ca%2F%2F%3Fstate%3DusrClk%253dtrue%2526URL%253d%255bSSO%255d%252f%255bSSO%255d%5BSSO%5D&nonce=Cai2kLKFw4PT4uRX&client_id=e442e6e6-2602-4a39-937b-8b28b4457ed3&TC=0&response_mode=form_post", "https://www.costco.ca/?DM_PersistentCookieCreated=true", "https://www.costco.ca/CatalogSearch?dept=All&keyword=Juice", "https://www.costco.ca/", "https://www.costcotravel.ca/?utm_source=costco.ca&utm_medium=referral&utm_campaign=ShopTravel&utm_term=costcotravel.ca&utm_content=20160610"],
+  "plugins": []
+}
